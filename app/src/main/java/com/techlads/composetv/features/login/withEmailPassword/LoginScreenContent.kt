@@ -156,13 +156,3 @@ fun LoginBackground(modifier: Modifier = Modifier) {
     }
 }
 
-@Preview(device = Devices.TV_1080p)
-@Composable
-fun LoginPagePrev() {
-    ComposeTvTheme {
-        Box {
-            LoginPageContent { u, p ->
-            }
-        }
-    }
-}

@@ -45,12 +45,3 @@ fun HorizontalCarouselItem(
     }
 }
 
-@Preview
-@Composable
-fun HorizontalCarouselItemPrev() {
-    HorizontalCarouselItem(
-        1,
-        onItemFocus = { _, _ -> },
-        onItemClick = { _, _ -> },
-    )
-}

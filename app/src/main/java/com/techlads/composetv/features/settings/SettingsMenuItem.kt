@@ -19,8 +19,3 @@ fun SettingsMenuItem(item: SettingsMenuModel, onMenuSelected: (SettingsMenuModel
     }
 }
 
-@Preview
-@Composable
-fun SettingsMenuItemPrev() {
-    SettingsMenuItem(SettingsMenuModel("Menu", "")) {}
-}

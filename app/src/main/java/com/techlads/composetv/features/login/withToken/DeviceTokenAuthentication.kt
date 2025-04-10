@@ -22,13 +22,3 @@ fun DeviceTokenAuthenticationScreen(
     }
 }
 
-
-@Preview
-@Composable
-private fun DeviceTokenAuthenticationScreenPreview() {
-    ComposeTvTheme {
-        DeviceTokenAuthenticationScreen(Modifier.fillMaxSize(), onSkip = {}) {
-
-        }
-    }
-}

@@ -25,11 +25,3 @@ fun LoginScreen(
     }
 }
 
-@Preview(device = Devices.TV_1080p)
-@Composable
-fun LoginScreenPrev() {
-    ComposeTvTheme {
-        LoginScreen(Modifier.fillMaxSize()) {
-        }
-    }
-}

@@ -78,8 +78,3 @@ fun TvTextField(
     }
 }
 
-@Preview
-@Composable
-fun TvTextFieldPrev() {
-    TvTextField("Test", "Enter Test") {}
-}

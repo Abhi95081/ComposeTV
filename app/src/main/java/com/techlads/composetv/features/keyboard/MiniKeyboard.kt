@@ -136,10 +136,3 @@ fun KeyItem(
     }
 }
 
-@Preview
-@Composable
-fun MiniKeyboardPrev() {
-    ComposeTvTheme {
-        MiniKeyboard(modifier = Modifier.size(400.dp))
-    }
-}

@@ -143,20 +143,3 @@ fun SongsHomeGreeting() {
     )
 }
 
-@Preview
-@Composable
-fun SongsScreenPrev() {
-    SongsScreen {}
-}
-
-@Preview
-@Composable
-fun SongItemPrev() {
-    SongItem(1)
-}
-
-@Preview
-@Composable
-fun TagItemPrev() {
-    TagItem(1)
-}

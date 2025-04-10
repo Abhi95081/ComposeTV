@@ -53,10 +53,3 @@ fun FocusableItem(
     }
 }
 
-@Preview
-@Composable
-fun FocusableItemPrev() {
-    FocusableItem(onClick = {}) {
-        Text(text = "Preview Text")
-    }
-}

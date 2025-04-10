@@ -124,15 +124,3 @@ fun HomeScreenContent(
         }
     }
 }
-
-@Preview
-@Composable
-fun HomeScreenContentPrev() {
-    ComposeTvTheme {
-        HomeScreenContent(onItemFocus = { _, _ -> },
-            usedTopBar = MutableStateFlow(NavigationEvent.TopBar),
-            navigationBar = {
-
-            }) {}
-    }
-}

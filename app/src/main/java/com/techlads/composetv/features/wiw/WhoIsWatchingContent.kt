@@ -26,6 +26,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -96,7 +97,7 @@ fun WhoIsWatchingContent(onProfileSelection: (avatar: Avatar) -> Unit) {
             }
 
             var lastPosition by remember {
-                mutableStateOf(0)
+                mutableIntStateOf(0)
             }
 
             val requester = remember { FocusRequester() }
@@ -234,9 +235,3 @@ fun AvatarIcon(modifier: Modifier, @DrawableRes avatarRes: Int, description: Str
     )
 }
 
-@Preview(device = Devices.TV_1080p, showBackground = true)
-@Composable
-private fun WhoIsWatchingPreview() {
-    WhoIsWatchingContent {
-    }
-}

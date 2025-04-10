@@ -13,9 +13,3 @@ fun AudioPlayerScreen(onBackPressed: () -> Unit) {
     BackHandler(onBack = onBackPressed)
     AudioPlayerScreenContent(modifier = Modifier.fillMaxSize())
 }
-
-@Preview(device = Devices.TV_1080p)
-@Composable
-private fun AudioPlayerScreenPrev() {
-    AudioPlayerScreen {}
-}

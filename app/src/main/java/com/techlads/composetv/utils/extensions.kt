@@ -1,5 +1,6 @@
 package com.techlads.composetv.utils
 
+import android.os.Build
 import android.view.KeyEvent
 import android.view.KeyEvent.KEYCODE_DPAD_CENTER
 import android.view.KeyEvent.KEYCODE_DPAD_DOWN
@@ -12,6 +13,7 @@ import android.view.KeyEvent.KEYCODE_SYSTEM_NAVIGATION_DOWN
 import android.view.KeyEvent.KEYCODE_SYSTEM_NAVIGATION_LEFT
 import android.view.KeyEvent.KEYCODE_SYSTEM_NAVIGATION_RIGHT
 import android.view.KeyEvent.KEYCODE_SYSTEM_NAVIGATION_UP
+import androidx.annotation.RequiresApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.graphics.BlendMode
@@ -24,6 +26,7 @@ import kotlinx.coroutines.flow.StateFlow
 
 fun <T> StateFlow<T>.toMutable() = this as MutableStateFlow
 
+@RequiresApi(Build.VERSION_CODES.N_MR1)
 private val DPadEventsKeyCodes = listOf(
     KEYCODE_DPAD_LEFT,
     KEYCODE_SYSTEM_NAVIGATION_LEFT,
@@ -38,6 +41,7 @@ private val DPadEventsKeyCodes = listOf(
     KEYCODE_SYSTEM_NAVIGATION_DOWN
 )
 
+@RequiresApi(Build.VERSION_CODES.N_MR1)
 fun Modifier.handleDPadKeyEvents(
     onUp: (() -> Unit)? = null,
     onDown: (() -> Unit)? = null,

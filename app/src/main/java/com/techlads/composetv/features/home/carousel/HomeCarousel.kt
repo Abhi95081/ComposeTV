@@ -62,14 +62,6 @@ fun HomeCarousel(
     }
 }
 
-@Preview
-@Composable
-fun HomeCarouselPrev() {
-    Column {
-        HomeCarousel(Modifier, onItemFocus = { _, _ -> }) { _, _ -> }
-    }
-}
-
 
 @Composable
 fun PositionFocusedItemInLazyLayout(

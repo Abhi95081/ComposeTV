@@ -197,11 +197,3 @@ fun DeviceTokenAuthenticationContent(
     }
 }
 
-
-@Preview
-@Composable
-fun DeviceTokenAuthenticationContentPreview() {
-    ComposeTvTheme {
-        DeviceTokenAuthenticationContent(token = "OTF2", "www.google.com", skip = {}, onLoginClick = {})
-    }
-}

@@ -130,7 +130,7 @@ fun ProductDetails(
         modifier = modifier, verticalArrangement = Arrangement.spacedBy(4.dp)
     ) {
 
-        AnimatedContent(movie.metadata) {
+        AnimatedContent(movie.metadata, label = "") {
             Text(
                 modifier = Modifier.graphicsLayer { alpha = 0.5f },
                 text = it,
@@ -140,7 +140,7 @@ fun ProductDetails(
         }
 
 
-        AnimatedContent(movie.title) {
+        AnimatedContent(movie.title, label = "") {
             Text(
                 text = it,
                 style = MaterialTheme.typography.titleLarge.copy(
@@ -155,7 +155,7 @@ fun ProductDetails(
 
         Spacer(modifier = Modifier.size(2.dp))
 
-        AnimatedContent(movie.details) {
+        AnimatedContent(movie.details, label = "") {
             Text(
                 modifier = Modifier.graphicsLayer { alpha = 0.5f },
                 text = it,
@@ -194,10 +194,3 @@ fun ProductDetails(
     }
 }
 
-@Preview
-@Composable
-fun HeroItemPrev() {
-    ComposeTvTheme {
-        HeroItem()
-    }
-}

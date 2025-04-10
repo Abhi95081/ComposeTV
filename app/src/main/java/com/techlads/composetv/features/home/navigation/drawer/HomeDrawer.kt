@@ -132,10 +132,3 @@ fun NavigationDrawerScope.Header(
     }
 }
 
-@Preview
-@Composable
-fun HomeDrawerPrev() {
-    HomeDrawer(content = {
-        Text(text = "Hello World")
-    }, onMenuSelected = null)
-}

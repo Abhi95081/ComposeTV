@@ -13,8 +13,3 @@ fun ScreenHeading(heading: String) {
     )
 }
 
-@Preview
-@Composable
-fun ScreenHeadingPrev() {
-    ScreenHeading("LOGIN")
-}

@@ -70,8 +70,3 @@ fun SettingsMenu(
     }
 }
 
-@Preview
-@Composable
-fun SettingsMenuPrev() {
-    SettingsMenu(usedTopBar = MutableStateFlow(NavigationEvent.TopBar), navigationBar = {}) {}
-}

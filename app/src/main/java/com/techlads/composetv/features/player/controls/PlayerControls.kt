@@ -194,21 +194,3 @@ fun VideoHeaders() {
 
 private fun Long.padStartWith0() = this.toString().padStart(2, '0')
 
-@Preview
-@Composable
-private fun PlayerControlsPrev() {
-    PlayerControls(
-        modifier = Modifier.fillMaxSize(),
-        isPlaying = false,
-        onPlayPauseToggle = {},
-        onSeek = {},
-        contentProgressInMillis = 0,
-        contentDurationInMillis = 0,
-    )
-}
-
-@Preview
-@Composable
-fun VideoHeadersPrev() {
-    VideoHeaders()
-}

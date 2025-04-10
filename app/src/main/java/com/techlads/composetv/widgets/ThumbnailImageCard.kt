@@ -31,19 +31,3 @@ fun ThumbnailImageCard(
     }
 }
 
-@Preview
-@Composable
-fun ThumbnailImageCardPreview() {
-    ComposeTvTheme {
-        ThumbnailImageCard(
-            Modifier
-                .width(150.dp)
-                .background(
-                    color = MaterialTheme.colorScheme.onSurface,
-                    shape = MaterialTheme.shapes.small,
-                ),
-        ) {
-            Text(text = "1x1")
-        }
-    }
-}

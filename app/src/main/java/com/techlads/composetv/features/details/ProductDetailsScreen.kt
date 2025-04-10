@@ -249,10 +249,3 @@ fun Rating(rating: String) {
     }
 }
 
-@Preview(device = Devices.TV_1080p)
-@Composable
-fun DetailsScreenPrev() {
-    ComposeTvTheme {
-        ProductDetailsScreen(onPlayClick = {}, onBackPressed = {})
-    }
-}

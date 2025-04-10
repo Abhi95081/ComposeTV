@@ -46,8 +46,3 @@ fun SettingsNavigation(navController: NavHostController) {
     NestedSettingsScreenNavigation(navController = navController)
 }
 
-@Preview
-@Composable
-fun SettingsScreenPrev() {
-    SettingsScreen(MutableStateFlow(NavigationEvent.TopBar)){}
-}

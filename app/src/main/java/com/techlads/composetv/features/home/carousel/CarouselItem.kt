@@ -59,19 +59,3 @@ fun VerticalCarouselItem(parent: Int, child: Int, onItemFocus: (parent: Int, chi
     }
 }
 
-@Preview
-@Composable
-fun CarouselItemPrev() {
-    ComposeTvTheme {
-        CarouselItem(Modifier, 1, 1, onItemClick = { _, _ -> }, onItemFocus = { _, _ -> })
-    }
-}
-
-@Preview
-@Composable
-fun VerticalCarouselItemPrev() {
-    ComposeTvTheme {
-        VerticalCarouselItem(1, 1) { _, _ ->
-        }
-    }
-}

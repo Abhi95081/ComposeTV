@@ -54,8 +54,3 @@ fun ContentHeading(title: String) {
     )
 }
 
-@Preview
-@Composable
-fun ContentHeadingPrev() {
-    ContentHeading(SettingsMenuModel("Profile", "").text)
-}

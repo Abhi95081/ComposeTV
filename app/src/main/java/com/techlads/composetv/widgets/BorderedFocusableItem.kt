@@ -83,10 +83,3 @@ fun BorderedFocusableItem(
     }
 }
 
-@Preview
-@Composable
-private fun BorderedFocusableItemPrev() {
-    BorderedFocusableItem(onClick = {}) {
-        Text(text = "Preview Text")
-    }
-}

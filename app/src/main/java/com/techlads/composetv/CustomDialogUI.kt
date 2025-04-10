@@ -123,9 +123,3 @@ fun CustomDialogUI(
     }
 }
 
-@SuppressLint("UnrememberedMutableState")
-@Preview(name = "Custom Dialog")
-@Composable
-fun MyDialogUIPreview() {
-    CustomDialogUI(openDialogCustom = mutableStateOf(false)) {}
-}

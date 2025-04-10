@@ -73,10 +73,3 @@ fun SearchView() {
     }
 }
 
-@Preview(device = Devices.TV_1080p)
-@Composable
-fun SearchScreenPrev() {
-    ComposeTvTheme {
-        SearchScreen()
-    }
-}

@@ -46,8 +46,3 @@ fun GridHeader() {
     )
 }
 
-@Preview
-@Composable
-fun FavoritesScreenPrev() {
-    FavoritesScreen()
-}

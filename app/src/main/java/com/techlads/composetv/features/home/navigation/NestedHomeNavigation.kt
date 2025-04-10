@@ -23,13 +23,3 @@ fun NestedHomeNavigation(
     )
 }
 
-@OptIn(ExperimentalAnimationApi::class)
-@Preview
-@Composable
-private fun NestedHomeNavigationPrev() {
-    NestedHomeNavigation(MutableStateFlow(NavigationEvent.TopBar),
-        {},
-        rememberAnimatedNavController(),
-        { _, _ -> },
-        { _, _ -> }) {}
-}

@@ -11,9 +11,3 @@ fun NestedHomeNavigation(navController: NavHostController) {
     NestedSettingsScreenNavigation(navController)
 }
 
-@OptIn(ExperimentalAnimationApi::class)
-@Preview
-@Composable
-fun NestedHomeNavigationPrev() {
-    NestedHomeNavigation(rememberAnimatedNavController())
-}
