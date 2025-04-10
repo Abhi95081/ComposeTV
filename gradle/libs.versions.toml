@@ -10,7 +10,7 @@ minSdkTv = "21"
 kotlin = "2.0.20"
 androidComposeCompiler = "1.5.3"
 androidLibrary = "7.4.2"
-androidGradlePlugin = "8.7.1"
+androidGradlePlugin = "8.5.2"
 detekt = "1.23.0"
 
 # Library Versions
